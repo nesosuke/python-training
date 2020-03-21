@@ -1,2 +1,5 @@
 #!/usr/bin/python3
-print(open("test.txt", "r").read())
+import sys
+args = sys.argv[1]
+# filepath = input()  // コマンドライン上で引数にしたい
+print(open(args, "r").read())
